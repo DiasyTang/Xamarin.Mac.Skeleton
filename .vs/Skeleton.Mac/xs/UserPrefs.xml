@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{19166ABE-B1D4-4C42-9BC4-828AA42CC25A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Skeleton.Mac/FilesTableView/FileTableDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Skeleton.Mac/WindowController.cs">
     <Files>
-      <File FileName="Skeleton.Mac/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="Skeleton.Mac/AppDelegate.cs" Line="25" Column="25" />
       <File FileName="Skeleton.Mac/FilesTableView/FileItemTableDataSource.cs" Line="26" Column="19" />
-      <File FileName="Skeleton.Mac/FilesTableView/FileTableDelegate.cs" Line="58" Column="9" />
+      <File FileName="Skeleton.Mac/FilesTableView/FileTableDelegate.cs" Line="39" Column="13" />
+      <File FileName="Skeleton.Mac/FileViewController.cs" Line="23" Column="48" />
+      <File FileName="Skeleton.Mac/WindowController.cs" Line="19" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

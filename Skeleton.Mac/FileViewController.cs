@@ -4,6 +4,7 @@ using System;
 
 using Foundation;
 using AppKit;
+using Skeleton.Mac.FilesTableView;
 
 namespace Skeleton.Mac
 {
@@ -11,6 +12,18 @@ namespace Skeleton.Mac
 	{
 		public FileViewController (IntPtr handle) : base (handle)
 		{
+		}
+
+		public override void AwakeFromNib()
+		{
+            base.AwakeFromNib();
+            var DataSource = new FileItemTableDataSource();
+            DataSource.Files.Add(new FileItem());
+            DataSource.Files.Add(new FileItem());
+            DataSource.Files.Add(new FileItem());
+
+            FileTable.DataSource = DataSource;
+            FileTable.Delegate = new FileTableDelegate(DataSource);
 		}
 	}
 }

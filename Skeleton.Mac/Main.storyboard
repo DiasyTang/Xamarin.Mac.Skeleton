@@ -650,12 +650,59 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" sceneMemberID="viewController">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="368" y="145" width="450" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="7B92E861-0DFD-4A81-A311-4849996EFB81" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="Uxs-dJ-Iqb">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="hoT-Pf-Js0"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="gF9-dK-naH"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="g4x-oF-93G"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="ewS-cd-3w3"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Wvp-dR-0Ad"/>
+                                <toolbarItem implicitItemIdentifier="DAD07D60-6ACA-4389-B9DF-E9FF62668F0C" label="" paletteLabel="" tag="-1" image="NSAdvanced" id="jI2-RT-OZq"/>
+                                <toolbarItem implicitItemIdentifier="F6941E4A-FF89-4506-B074-79C3A719D6C0" label="" paletteLabel="" tag="-1" image="NSInfo" id="qfX-1i-tre"/>
+                                <toolbarItem implicitItemIdentifier="F293209B-BEA4-464A-AA0E-CBD41AAE9123" label="" paletteLabel="" id="mkI-It-ZJe">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="96" height="22"/>
+                                    <size key="maxSize" width="96" height="22"/>
+                                    <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" id="sRJ-gB-wQz">
+                                        <rect key="frame" x="0.0" y="14" width="96" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="Tqp-zU-qzt">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                    </searchField>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="7F2BE363-325D-4617-A29B-2BA6CBAD1D93" label="" paletteLabel="" id="eqE-hv-Ka5">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="17"/>
+                                    <size key="maxSize" width="60" height="17"/>
+                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Xa0-Mc-oV5">
+                                        <rect key="frame" x="0.0" y="14" width="38" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="4yY-VZ-7SH">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="mkI-It-ZJe"/>
+                                <toolbarItem reference="Wvp-dR-0Ad"/>
+                                <toolbarItem reference="eqE-hv-Ka5"/>
+                                <toolbarItem reference="Wvp-dR-0Ad"/>
+                                <toolbarItem reference="jI2-RT-OZq"/>
+                                <toolbarItem reference="qfX-1i-tre"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="NN2-KH-tb6"/>
                         </connections>
@@ -666,12 +713,12 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="-238"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="3DU-QX-UtL">
             <objects>
-                <tabViewController selectedTabViewItemIndex="3" id="234-PR-Qt8" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="234-PR-Qt8" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="FILES" identifier="" id="8Hp-SL-XBj"/>
                         <tabViewItem label="CONTACTS" identifier="" id="2zQ-no-TNL"/>
@@ -680,7 +727,7 @@
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="cGR-1o-evo">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <font key="font" metaFont="message"/>
                         <tabViewItems/>
                         <connections>
@@ -697,7 +744,7 @@
                 </tabViewController>
                 <customObject id="979-T5-13f" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="661"/>
+            <point key="canvasLocation" x="55" y="331"/>
         </scene>
         <!--FileViewController-->
         <scene sceneID="I57-o9-Ntb">
@@ -705,7 +752,7 @@
                 <viewController title="FileViewController" id="GOp-0V-ufc" customClass="FileViewController" sceneMemberID="viewController">
                     <splitView key="view" arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" id="bPx-C9-CiE">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <customView fixedFrame="YES" id="RWv-F5-ppo">
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="300"/>
@@ -892,7 +939,7 @@
                 </viewController>
                 <customObject id="a6m-uD-Efw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="1131"/>
+            <point key="canvasLocation" x="-26" y="1000"/>
         </scene>
         <!--ContactViewController-->
         <scene sceneID="fUk-Hy-uyT">
@@ -905,7 +952,7 @@
                 </viewController>
                 <customObject id="4MQ-GD-Ri1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-585" y="1131"/>
+            <point key="canvasLocation" x="-555" y="1000"/>
         </scene>
         <!--PasswordViewController-->
         <scene sceneID="y6T-dP-f5Y">
@@ -918,7 +965,7 @@
                 </viewController>
                 <customObject id="m7I-Wf-BeV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="1131"/>
+            <point key="canvasLocation" x="448" y="1000"/>
         </scene>
         <!--SSHKeyViewController-->
         <scene sceneID="Al8-Pu-EU6">
@@ -931,7 +978,11 @@
                 </viewController>
                 <customObject id="yyN-rJ-H0b" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="1131"/>
+            <point key="canvasLocation" x="963" y="1000"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAdvanced" width="32" height="32"/>
+        <image name="NSInfo" width="32" height="32"/>
+    </resources>
 </document>

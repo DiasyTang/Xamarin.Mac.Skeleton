@@ -85,6 +85,10 @@
     <Compile Include="FileViewController.designer.cs">
       <DependentUpon>FileViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="WindowController.cs" />
+    <Compile Include="WindowController.designer.cs">
+      <DependentUpon>WindowController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />

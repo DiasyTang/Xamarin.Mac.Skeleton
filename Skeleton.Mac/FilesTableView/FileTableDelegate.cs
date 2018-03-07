@@ -54,6 +54,11 @@ namespace Skeleton.Mac.FilesTableView
             }
             return view;
         }
-        #endregion
-    }
+
+		public override void SelectionDidChange(NSNotification notification)
+		{
+            
+		}
+		#endregion
+	}
 }
