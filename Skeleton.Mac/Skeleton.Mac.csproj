@@ -66,6 +66,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="FilesTableView\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

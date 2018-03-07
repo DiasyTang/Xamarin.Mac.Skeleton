@@ -11,11 +11,32 @@ namespace Skeleton.Mac
 	{
 		public FileTableView (IntPtr handle) : base (handle)
 		{
+            
 		}
 
-		public override void RightMouseUp(NSEvent theEvent)
+		public override void AwakeFromNib()
 		{
-            
+            base.AwakeFromNib();
+            var filemenu = new NSMenu();
+            filemenu.AddItem(new NSMenuItem() { Title = "ddd" });
+            filemenu.AddItem(new NSMenuItem() { Title = "aaa" });
+            filemenu.AddItem(new NSMenuItem() { Title = "bbb" });
+            this.Menu = filemenu;
+		}
+
+		public override void SelectCell(NSCell aCell)
+		{
+            base.SelectCell(aCell);
+		}
+
+		public override void SelectRows(NSIndexSet indexes, bool byExtendingSelection)
+		{
+            base.SelectRows(indexes, byExtendingSelection);
+		}
+
+		public override void WillOpenMenu(NSMenu menu, NSEvent theEvent)
+		{
+            base.WillOpenMenu(menu, theEvent);
 		}
 	}
 }
