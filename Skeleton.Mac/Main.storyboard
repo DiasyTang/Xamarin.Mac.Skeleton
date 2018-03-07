@@ -769,7 +769,7 @@
                                             <rect key="frame" x="1" y="0.0" width="318" height="284"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="enY-iy-MG1" viewBased="YES" id="N15-Ce-wEw">
+                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" autosaveColumns="NO" typeSelect="NO" rowSizeStyle="automatic" headerView="enY-iy-MG1" viewBased="YES" id="N15-Ce-wEw" customClass="FileTableView">
                                                     <rect key="frame" x="0.0" y="0.0" width="501" height="261"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>

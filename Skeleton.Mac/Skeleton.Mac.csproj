@@ -89,6 +89,10 @@
     <Compile Include="WindowController.designer.cs">
       <DependentUpon>WindowController.cs</DependentUpon>
     </Compile>
+    <Compile Include="FilesTableView\FileTableView.cs" />
+    <Compile Include="FilesTableView\FileTableView.designer.cs">
+      <DependentUpon>FileTableView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />

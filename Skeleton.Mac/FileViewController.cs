@@ -17,6 +17,11 @@ namespace Skeleton.Mac
 		public override void AwakeFromNib()
 		{
             base.AwakeFromNib();
+		}
+
+		public override void ViewDidLoad()
+		{
+            base.ViewDidLoad();
             var DataSource = new FileItemTableDataSource();
             DataSource.Files.Add(new FileItem());
             DataSource.Files.Add(new FileItem());
