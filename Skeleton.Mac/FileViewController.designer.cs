@@ -12,9 +12,15 @@ namespace Skeleton.Mac
 	[Register ("FileViewController")]
 	partial class FileViewController
 	{
+		[Outlet]
+		AppKit.NSTableView FileTable { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (FileTable != null) {
+				FileTable.Dispose ();
+				FileTable = null;
+			}
 		}
 	}
 }

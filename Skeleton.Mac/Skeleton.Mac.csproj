@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>Skeleton.Mac</RootNamespace>
-    <AssemblyName>Skeleton.Mac</AssemblyName>
+    <AssemblyName>Skeleton</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="FilesTableView\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -76,6 +77,13 @@
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilesTableView\FileItem.cs" />
+    <Compile Include="FilesTableView\FileItemTableDataSource.cs" />
+    <Compile Include="FilesTableView\FileTableDelegate.cs" />
+    <Compile Include="FileViewController.cs" />
+    <Compile Include="FileViewController.designer.cs">
+      <DependentUpon>FileViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
