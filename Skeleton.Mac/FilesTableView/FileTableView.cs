@@ -4,6 +4,8 @@ using System;
 
 using Foundation;
 using AppKit;
+using Skeleton.Mac.FilesTableView;
+using ObjCRuntime;
 
 namespace Skeleton.Mac
 {
@@ -18,10 +20,22 @@ namespace Skeleton.Mac
 		{
             base.AwakeFromNib();
             var filemenu = new NSMenu();
-            filemenu.AddItem(new NSMenuItem() { Title = "ddd" });
-            filemenu.AddItem(new NSMenuItem() { Title = "aaa" });
-            filemenu.AddItem(new NSMenuItem() { Title = "bbb" });
+            var menuitem = new NSMenuItem("ddd");
+            menuitem.Activated += (s, e) =>
+            {
+
+            };
+            filemenu.AddItem(menuitem);
+            //menuitem.Title = "aaa";
+            //filemenu.AddItem(menuitem);
+            //menuitem.Title = "ccc";
+            //filemenu.AddItem(menuitem);
             this.Menu = filemenu;
+            this.Menu.Delegate = new FileMenuDelegate();
+            this.DoubleClick += (s,e) =>
+            {
+
+            };
 		}
 
 		public override void SelectCell(NSCell aCell)
@@ -32,11 +46,6 @@ namespace Skeleton.Mac
 		public override void SelectRows(NSIndexSet indexes, bool byExtendingSelection)
 		{
             base.SelectRows(indexes, byExtendingSelection);
-		}
-
-		public override void WillOpenMenu(NSMenu menu, NSEvent theEvent)
-		{
-            base.WillOpenMenu(menu, theEvent);
 		}
 	}
 }

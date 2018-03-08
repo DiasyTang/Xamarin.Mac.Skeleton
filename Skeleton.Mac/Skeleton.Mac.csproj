@@ -94,6 +94,8 @@
     <Compile Include="FilesTableView\FileTableView.designer.cs">
       <DependentUpon>FileTableView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FilesTableView\FileMenuDelegate.cs" />
+    <Compile Include="FilesTableView\FileMenuItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
