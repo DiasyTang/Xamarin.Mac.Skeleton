@@ -30,26 +30,12 @@ namespace Skeleton.Mac
 		public override void AwakeFromNib()
 		{
             base.AwakeFromNib();
-            var filemenu = new NSMenu();
-            filemenu.AddItem(new NSMenuItem("Export", ExportMenu));
-
-            this.Menu = filemenu;
-            this.DoubleClick += FileTableViewDoubleCliked;
 		}
-
-        private void FileTableViewDoubleCliked(object sender,EventArgs args){
-            
-        }
 
         private void ExportMenu(object sender, EventArgs args)
         {
 
         }
-
-		public override void SelectRows(NSIndexSet indexes, bool byExtendingSelection)
-		{
-            base.SelectRows(indexes, byExtendingSelection);
-		}
 
 		public override NSView HitTest(CGPoint aPoint)
 		{
