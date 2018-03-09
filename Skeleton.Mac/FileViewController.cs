@@ -10,6 +10,17 @@ namespace Skeleton.Mac
 {
 	public partial class FileViewController : NSViewController
 	{
+        private bool _selectedState = false;
+
+        [Export("SelectedState")]
+        public bool SelectedState{
+            get => _selectedState;
+            set{
+                WillChangeValue(nameof(SelectedState));
+                _selectedState = value;
+                DidChangeValue(nameof(SelectedState));
+            }
+        }
 		public FileViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -28,7 +39,11 @@ namespace Skeleton.Mac
             DataSource.Files.Add(new FileItem());
 
             FileTable.DataSource = DataSource;
-            FileTable.Delegate = new FileTableDelegate(DataSource);
+            FileTable.Delegate = new FileTableDelegate(FileTable,DataSource);
+            FileTable.Clicked += (item) =>
+            {
+                SelectedState = item != null;
+            };
 		}
 	}
 }

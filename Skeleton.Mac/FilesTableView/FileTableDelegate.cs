@@ -14,11 +14,13 @@ namespace Skeleton.Mac.FilesTableView
 
         #region Private Variables
         private FileItemTableDataSource DataSource;
+        private FileTableView Controller;
         #endregion
 
         #region Constructors
-        public FileTableDelegate(FileItemTableDataSource datasource)
+        public FileTableDelegate(FileTableView controller,FileItemTableDataSource datasource)
         {
+            this.Controller = controller;
             this.DataSource = datasource;
         }
         #endregion
@@ -57,7 +59,22 @@ namespace Skeleton.Mac.FilesTableView
 
 		public override bool ShouldSelectRow(NSTableView tableView, nint row)
 		{
-            return true;
+            return tableView.RowCount > row;
+		}
+
+		public override void SelectionDidChange(NSNotification notification)
+		{
+            NSIndexSet selectedIndexs = Controller.SelectedRows;
+
+            if(selectedIndexs.Count!=1){
+                Controller.RaiseClickedEvent(null);
+            }
+            else{
+                var item = (Controller.DataSource as FileItemTableDataSource).Files[(int)selectedIndexs.FirstIndex];
+                if(item!=null){
+                    Controller.RaiseClickedEvent(item);
+                }
+            }
 		}
 		#endregion
 	}

@@ -9,17 +9,17 @@ using System.CodeDom.Compiler;
 
 namespace Skeleton.Mac
 {
-	[Register ("FileViewController")]
-	partial class FileViewController
+	[Register ("ContactViewController")]
+	partial class ContactViewController
 	{
 		[Outlet]
-        FileTableView FileTable { get; set; }
+		AppKit.NSMenu ContactMenu { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (FileTable != null) {
-				FileTable.Dispose ();
-				FileTable = null;
+			if (ContactMenu != null) {
+				ContactMenu.Dispose ();
+				ContactMenu = null;
 			}
 		}
 	}

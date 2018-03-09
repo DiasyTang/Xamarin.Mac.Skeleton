@@ -6,46 +6,62 @@ using Foundation;
 using AppKit;
 using Skeleton.Mac.FilesTableView;
 using ObjCRuntime;
+using CoreGraphics;
 
 namespace Skeleton.Mac
 {
 	public partial class FileTableView : NSTableView
 	{
+        private int Row = -1;
 		public FileTableView (IntPtr handle) : base (handle)
 		{
             
+		}
+
+		public override void WillOpenMenu(NSMenu menu, NSEvent theEvent)
+		{
+            base.WillOpenMenu(menu, theEvent);
+            if (Row < 0)
+            {
+                menu.CancelTracking();
+            }
 		}
 
 		public override void AwakeFromNib()
 		{
             base.AwakeFromNib();
             var filemenu = new NSMenu();
-            var menuitem = new NSMenuItem("ddd");
-            menuitem.Activated += (s, e) =>
-            {
+            filemenu.AddItem(new NSMenuItem("Export", ExportMenu));
 
-            };
-            filemenu.AddItem(menuitem);
-            //menuitem.Title = "aaa";
-            //filemenu.AddItem(menuitem);
-            //menuitem.Title = "ccc";
-            //filemenu.AddItem(menuitem);
             this.Menu = filemenu;
-            this.Menu.Delegate = new FileMenuDelegate();
-            this.DoubleClick += (s,e) =>
-            {
-
-            };
+            this.DoubleClick += FileTableViewDoubleCliked;
 		}
 
-		public override void SelectCell(NSCell aCell)
-		{
-            base.SelectCell(aCell);
-		}
+        private void FileTableViewDoubleCliked(object sender,EventArgs args){
+            
+        }
+
+        private void ExportMenu(object sender, EventArgs args)
+        {
+
+        }
 
 		public override void SelectRows(NSIndexSet indexes, bool byExtendingSelection)
 		{
             base.SelectRows(indexes, byExtendingSelection);
 		}
+
+		public override NSView HitTest(CGPoint aPoint)
+		{
+            Row = (int)GetRow(aPoint);
+            return base.HitTest(aPoint);
+		}
+
+        public delegate void ClickedDelegate(FileItem item);
+        public event ClickedDelegate Clicked;
+
+        internal void RaiseClickedEvent(FileItem item){
+            this.Clicked?.Invoke(item);
+        }
 	}
 }

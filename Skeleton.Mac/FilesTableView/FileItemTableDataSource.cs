@@ -9,7 +9,7 @@ namespace Skeleton.Mac.FilesTableView
     public class FileItemTableDataSource : NSTableViewDataSource
     {
         #region Public Varibles
-        public List<FileItem> Files = new List<FileItem>();
+        public List<FileItem> Files { get; set; } = new List<FileItem>();
         #endregion
 
         #region Constructors

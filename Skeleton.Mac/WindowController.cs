@@ -23,6 +23,7 @@ namespace Skeleton.Mac
 		{
             base.WindowDidLoad();
             Window.SetContentSize(new CGSize(1100, 650));
+            Window.TitleVisibility = NSWindowTitleVisibility.Hidden;
 		}
 	}
 }

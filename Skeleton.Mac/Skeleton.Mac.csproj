@@ -66,6 +66,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="FilesTableView\" />
+    <Folder Include="Delegates\" />
     <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
@@ -94,8 +95,10 @@
     <Compile Include="FilesTableView\FileTableView.designer.cs">
       <DependentUpon>FileTableView.cs</DependentUpon>
     </Compile>
-    <Compile Include="FilesTableView\FileMenuDelegate.cs" />
-    <Compile Include="FilesTableView\FileMenuItem.cs" />
+    <Compile Include="ContactViewController.cs" />
+    <Compile Include="ContactViewController.designer.cs">
+      <DependentUpon>ContactViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
