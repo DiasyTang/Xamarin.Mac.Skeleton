@@ -68,7 +68,6 @@
     <Folder Include="FilesTableView\" />
     <Folder Include="Delegates\" />
     <Folder Include="Controls\" />
-    <Folder Include="ContactsTableView\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -100,13 +99,6 @@
     <Compile Include="ContactViewController.designer.cs">
       <DependentUpon>ContactViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ContactsTableView\ContactTableView.cs" />
-    <Compile Include="ContactsTableView\ContactTableView.designer.cs">
-      <DependentUpon>ContactTableView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ContactsTableView\ContactItem.cs" />
-    <Compile Include="ContactsTableView\ContactTableDelegate.cs" />
-    <Compile Include="ContactsTableView\ContactTableDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
