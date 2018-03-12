@@ -1,32 +1,22 @@
 ﻿<Properties StartupConfiguration="{19166ABE-B1D4-4C42-9BC4-828AA42CC25A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Skeleton.Mac/FilesTableView/FileTableDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Skeleton.Mac/SSHKeyViewController.cs">
     <Files>
-      <File FileName="Skeleton.Mac/AppDelegate.cs" Line="25" Column="25" />
-      <File FileName="Skeleton.Mac/FilesTableView/FileItemTableDataSource.cs" Line="12" Column="74" />
-      <File FileName="Skeleton.Mac/FilesTableView/FileTableDelegate.cs" Line="73" Column="86" />
-      <File FileName="Skeleton.Mac/FileViewController.cs" Line="43" Column="14" />
-      <File FileName="Skeleton.Mac/WindowController.cs" Line="25" Column="58" />
-      <File FileName="Skeleton.Mac/ViewController.cs" Line="1" Column="1" />
-      <File FileName="Skeleton.Mac/FilesTableView/FileTableView.cs" Line="41" Column="13" />
-      <File FileName="Skeleton.Mac/WindowController.designer.cs" Line="1" Column="1" />
-      <File FileName="Skeleton.Mac/Info.plist" />
-      <File FileName="Skeleton.Mac/ContactViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="Skeleton.Mac/ContactViewController.cs" Line="17" Column="32" />
-      <File FileName="Skeleton.Mac/FileViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Skeleton.Mac/SSHKeyViewController.cs" Line="31" Column="6" />
+      <File FileName="Skeleton.Mac/SSHKeyViewController.designer.cs" Line="21" Column="1" />
+      <File FileName="Skeleton.Mac/PasswordViewController.cs" Line="24" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/Controls/FileMenu.cs" relfile="Skeleton.Mac/Controls/FileMenu.cs" line="24" column="1" />
-      <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/FilesTableView/FileTableView.cs" relfile="Skeleton.Mac/FilesTableView/FileTableView.cs" line="79" column="46" />
+      <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/FilesTableView/FileTableView.cs" relfile="Skeleton.Mac/FilesTableView/FileTableView.cs" line="106" column="46" />
       <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/FilesTableView/FileMenuDelegate.cs" relfile="Skeleton.Mac/FilesTableView/FileMenuDelegate.cs" line="20" column="59" />
-      <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/FilesTableView/FileTableView.cs" relfile="Skeleton.Mac/FilesTableView/FileTableView.cs" line="74" column="40" />
+      <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/FilesTableView/FileTableView.cs" relfile="Skeleton.Mac/FilesTableView/FileTableView.cs" line="101" column="40" />
       <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/Delegates/ContactMenuDelegate.cs" relfile="Skeleton.Mac/Delegates/ContactMenuDelegate.cs" line="28" column="57" />
       <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/Delegates/ContactMenuDelegate.cs" relfile="Skeleton.Mac/Delegates/ContactMenuDelegate.cs" line="23" column="60" />
       <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/Delegates/ContactMenuDelegate.cs" relfile="Skeleton.Mac/Delegates/ContactMenuDelegate.cs" line="10" column="1" />
       <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/Delegates/ContactMenuDelegate.cs" relfile="Skeleton.Mac/Delegates/ContactMenuDelegate.cs" line="16" column="17" />
-      <Breakpoint file="/Users/tina/Documents/Project/Xamarin.Mac.Skeleton/Skeleton.Mac/FileViewController.cs" relfile="Skeleton.Mac/FileViewController.cs" line="44" column="38" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

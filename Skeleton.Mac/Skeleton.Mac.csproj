@@ -66,8 +66,8 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="FilesTableView\" />
-    <Folder Include="Delegates\" />
-    <Folder Include="Controls\" />
+    <Folder Include="ContactsTableView\" />
+    <Folder Include="PasswordsOutlineView\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -98,6 +98,25 @@
     <Compile Include="ContactViewController.cs" />
     <Compile Include="ContactViewController.designer.cs">
       <DependentUpon>ContactViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsTableView\ContactTableView.cs" />
+    <Compile Include="ContactsTableView\ContactTableView.designer.cs">
+      <DependentUpon>ContactTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsTableView\ContactItem.cs" />
+    <Compile Include="ContactsTableView\ContactTableDelegate.cs" />
+    <Compile Include="ContactsTableView\ContactTableDataSource.cs" />
+    <Compile Include="SSHKeyViewController.cs" />
+    <Compile Include="SSHKeyViewController.designer.cs">
+      <DependentUpon>SSHKeyViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordViewController.cs" />
+    <Compile Include="PasswordViewController.designer.cs">
+      <DependentUpon>PasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordsOutlineView\PasswordOutlineView.cs" />
+    <Compile Include="PasswordsOutlineView\PasswordOutlineView.designer.cs">
+      <DependentUpon>PasswordOutlineView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

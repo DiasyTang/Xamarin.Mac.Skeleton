@@ -9,18 +9,26 @@ using System.CodeDom.Compiler;
 
 namespace Skeleton.Mac
 {
-	[Register ("ContactViewController")]
-	partial class ContactViewController
-	{
-		[Outlet]
-		AppKit.NSMenu ContactMenu { get; set; }
-		
-		void ReleaseDesignerOutlets ()
-		{
-			if (ContactMenu != null) {
-				ContactMenu.Dispose ();
-				ContactMenu = null;
-			}
-		}
-	}
+    [Register ("ContactViewController")]
+    partial class ContactViewController
+    {
+        [Outlet]
+        AppKit.NSMenu ContactMenu { get; set; }
+
+        [Outlet]
+        Skeleton.Mac.ContactTableView ContactTable { get; set; }
+        
+        void ReleaseDesignerOutlets ()
+        {
+            if (ContactMenu != null) {
+                ContactMenu.Dispose ();
+                ContactMenu = null;
+            }
+
+            if (ContactTable != null) {
+                ContactTable.Dispose ();
+                ContactTable = null;
+            }
+        }
+    }
 }
